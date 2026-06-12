@@ -1,0 +1,195 @@
+:root {
+  /* 1º Quadrante (0° a 90°) - Exemplo: 45deg (De baixo para cima, inclinando para a direita) */
+  --sunset-gradient-1: linear-gradient(
+    45deg,
+    #f7c6c7,
+    #e2d4f0,
+    #fff5c0,
+    #ffd0b4,
+    #d1e3f0
+  );
+
+  /* 2º Quadrante (90° a 180°) - Exemplo: 135deg (De cima para baixo, inclinando para a direita - O seu atual) */
+  --sunset-gradient-2: linear-gradient(
+    135deg,
+    #f7c6c7,
+    #e2d4f0,
+    #fff5c0,
+    #ffd0b4,
+    #d1e3f0
+  );
+
+  /* 3º Quadrante (180° a 270°) - Exemplo: 225deg (De cima para baixo, inclinando para a esquerda) */
+  --sunset-gradient-3: linear-gradient(
+    225deg,
+    #f7c6c7,
+    #e2d4f0,
+    #fff5c0,
+    #ffd0b4,
+    #d1e3f0
+  );
+
+  /* 4º Quadrante (270° a 360°) - Exemplo: 315deg (De baixo para cima, inclinando para a esquerda) */
+  --sunset-gradient-4: linear-gradient(
+    315deg,
+    #f7c6c7,
+    #e2d4f0,
+    #fff5c0,
+    #ffd0b4,
+    #d1e3f0
+  );
+
+  /* Identidade do Footer / Hovers */
+  --color-footer-hover: #44197c;
+
+  /* Novas Cores de Suporte (A paleta combinada) */
+  --color-primary-accent: #8e5fc6; /* Botões e destaques */
+  --color-text-dark: #2a263d; /* Cor principal dos textos */
+  --color-bg-light: #fdfbf7; /* Fundo das seções fora do gradiente */
+  --color-detail: #e07a5f; /* Pequenos detalhes/ícones */
+  --color-card: #eaf2f8; /* Fundo card */
+}
+
+.instagram:hover {
+  background: linear-gradient(
+    to top left,
+    #fcaf45,
+    #f77737,
+    #e1306c,
+    #c13584,
+    #833ab4,
+    #405de6
+  );
+  text-shadow: 0px 1px 4px #000000;
+  color: #fff;
+}
+.youtube:hover {
+  background: #ff0000;
+  color: #fff;
+  text-shadow: 0px 1px 4px #000;
+}
+.tiktok:hover {
+  background: linear-gradient(to right, #00f2fe, #ee1d52);
+  text-shadow: 0px 1px 0px #000000;
+}
+.pinterest:hover {
+  background: #e60023;
+  color: #fff;
+  text-shadow: 0px 1px 4px #000;
+}
+.tamanho_logo {
+  width: 100%;
+  max-width: 250px;
+  min-width: 50px;
+}
+.min_height {
+  min-height: 150px;
+}
+.cor_header {
+  background: var(--sunset-gradient-2);
+  box-shadow: 2px 2px 2px #000;
+}
+.cor_header_invertido {
+  background: var(--sunset-gradient-1);
+  box-shadow: 2px 2px 2px #000;
+}
+.cor_footer {
+  color: #000;
+  border-radius: 5px;
+}
+.cor_footer:hover {
+  color: var(--color-bg-light);
+  background-color: var(--color-footer-hover);
+  border-radius: 5px;
+  box-shadow: 2px 2px 0 var(--color-text-dark);
+  border-color: var(--color-footer-hover);
+}
+.titulo_footer {
+  text-shadow:
+    0 0 5px var(--color-primary-accent),
+    0 0 3px var(--color-bg-light);
+}
+.textos {
+  color: #1a1a1a;
+}
+.cor_footer_dropdown {
+  color: #000;
+  border-radius: 5px;
+  border: none !important;
+}
+.cor_footer_dropdown:hover,
+.cor_footer_dropdown:active,
+.cor_footer_dropdown:focus,
+.cor_footer_dropdown.show {
+  color: #dbdbdb !important;
+  background-color: var(--color-footer-hover) !important;
+  border-radius: 5px;
+  box-shadow: 2px 2px 0 var(--color-text-dark);
+  border-color: var(--color-footer-hover);
+}
+.color_insta {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+.color_insta_inspiracoes {
+  text-decoration: none;
+  color: #dbdbdb;
+}
+.botao_seguir_insta {
+  background-color: #44197c;
+  color: #ffffff;
+  border: 2px solid #44197c;
+  transition: all 0.3s ease;
+}
+.botao_seguir_insta:hover {
+  background-color: transparent;
+  color: #44197c;
+  border-color: #44197c;
+  transform: scale(1.05);
+}
+.box_inspiracoes {
+  border: solid 2px #000;
+  border-radius: 10px;
+  background-color: var(--color-footer-hover);
+  color: #dbdbdb;
+  box-shadow: 2px 2px 2px #000;
+  text-shadow: 2px 2px 2px #000;
+}
+.card_qs {
+  box-shadow: 2px 2px 6px #000;
+}
+.titulo_qs {
+  text-shadow:
+    0 0 10px var(--color-footer-hover),
+    0 0 20px var(--color-primary-accent);
+}
+.card_alert {
+  background-color: var(--color-footer-hover);
+  color: var(--color-bg-light);
+  text-shadow: 0 0 4px var(--color-primary-accent);
+  box-shadow: 2px 2px 3px #000;
+  border-radius: 50px;
+}
+.card_ult_art {
+  background-color: var(--color-card);
+  border: none;
+}
+.card_ult_art .card-title {
+  color: #1e2a38;
+}
+.card_ult_art .text-muted {
+  color: #627284 !important;
+}
+.card_ult_art .card-text {
+  color: #3a4750;
+}
+.card_ult_art .blockquote {
+  border-color: var(--color-footer-hover) !important;
+}
+.card_ult_art .blockquote p {
+  color: var(--color-footer-hover) !important;
+}
+.borda_img {
+  border: solid 2px var(--color-text-dark);
+  box-shadow: 0 0 10px var(--color-footer-hover);
+}
