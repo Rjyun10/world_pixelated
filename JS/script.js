@@ -8,5 +8,5 @@ function carregarComponente(idElemento, caminhoArquivo) {
 }
 
 // Executa a função para o header e o footer
-carregarComponente("header-container", "header.html");
-carregarComponente("footer-container", "footer.html");
+carregarComponente("header-container", "../header.html");
+carregarComponente("footer-container", "../footer.html");
