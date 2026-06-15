@@ -140,12 +140,14 @@
   color: #ffffff;
   border: 2px solid #44197c;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 .botao_seguir_insta:hover {
   background-color: transparent;
   color: #44197c;
   border-color: #44197c;
   transform: scale(1.05);
+  text-decoration: none;
 }
 .box_inspiracoes {
   border: solid 2px #000;
