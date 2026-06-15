@@ -195,3 +195,6 @@
   border: solid 2px var(--color-text-dark);
   box-shadow: 0 0 10px var(--color-footer-hover);
 }
+.footer_link a {
+  text-decoration: none;
+}
